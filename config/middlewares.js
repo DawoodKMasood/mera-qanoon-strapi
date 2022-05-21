@@ -6,7 +6,7 @@ module.exports = ({ env }) => [
       contentSecurityPolicy: {
         directives: {
           'script-src': ["'self'", "'unsafe-inline'", 'cdn.jsdelivr.net'],
-          'img-src': ["'self'", 'data:', 'airtable.com', 'cdn.jsdelivr.net', 'strapi.io', `${env('AWS_BUCKET_NAME')}.s3.${env('AWS_REGION')}.amazonaws.com`],
+          'img-src': ["'self'", 'data:', 'dl.airtable.com', 'cdn.jsdelivr.net', 'strapi.io', `${env('AWS_BUCKET_NAME')}.s3.${env('AWS_REGION')}.amazonaws.com`],
         },
       }
     },
